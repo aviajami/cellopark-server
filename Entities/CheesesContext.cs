@@ -15,8 +15,9 @@ namespace cellopark_server.Entities
 
             List<CheeseResponse> cheeseResponses = new List<CheeseResponse>();
             cheeses.ForEach(cheese => {
-                cheese.UpdatePrice();
-                cheeseResponses.Add(new CheeseResponse() { Name = cheese.Name, price = cheese.Price });
+                Cheese res = CheesesFactory.CreateCheeses(cheese);
+                res.UpdatePrice();
+                cheeseResponses.Add(new CheeseResponse() { Name = res.Name, price = res.Price });
                 });
             return cheeseResponses;
         }

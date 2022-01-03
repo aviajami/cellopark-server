@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace cellopark_server.Entities
 {
-    public class CheesesFactory
+    public static class CheesesFactory
     {
-        public Cheese CreateCheeses(Cheese cheese)
+        public static Cheese CreateCheeses(Cheese cheese)
         {
             Cheese result;
             switch (cheese.Type)
