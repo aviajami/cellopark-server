@@ -43,6 +43,7 @@ namespace cellopark_server.Entities
             {
                 Price = 20;
             }
+            Price = Math.Round(Price, 2);
         }
     }
 }

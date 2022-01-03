@@ -20,15 +20,7 @@ namespace cellopark_server.Entities
                 Type = Globals.CheeseType.Standard
             };
             cheeses.Add(c);
-            c = new Cheese()
-            {
-                Name = "Roquefort",
-                Price = 12.35,
-                BestBeforeDate = new DateTime(2022, 01, 12),
-                DaysToSell = 20,
-                Type = Globals.CheeseType.Aged
-            };
-            cheeses.Add(c);
+          
             c = new Cheese()
             {
                 Name = "Calcagno",
